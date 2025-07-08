@@ -1,6 +1,6 @@
 [package]
 name = "yoinky"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Huseyn"]
 description = "TUI tool for monitoring system resources like CPU, RAM, and GPU."
