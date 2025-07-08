@@ -1,6 +1,5 @@
 # 🛰️ Yoinky :: System Monitor
 
-![Yoinky Screenshot](https://i.imgur.com/YOUR_SCREENSHOT_ID.png) <!-- Replace with a real screenshot URL -->
 
 A lightweight and efficient terminal-based system monitor for Linux, built with Rust 🦀. Yoinky provides a real-time, at-a-glance view of your system's key metrics in a clean and boxy terminal user interface.
 
