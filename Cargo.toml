@@ -2,6 +2,9 @@
 name = "yoinky"
 version = "0.1.0"
 edition = "2021"
+authors = ["Huseyn"]
+description = "TUI tool for monitoring system resources like CPU, RAM, and GPU."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -9,3 +12,4 @@ edition = "2021"
 procfs = "0.15.1"
 ratatui = { version = "0.26.0", features = ["crossterm"] }
 crossterm = "0.27.0"
+clap = { version = "4.2.0", features = ["derive"] }

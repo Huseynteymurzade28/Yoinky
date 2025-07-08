@@ -28,7 +28,21 @@ A lightweight and efficient terminal-based system monitor for Linux, built with 
 - On NVIDIA systems: `nvidia-smi` command-line tool must be installed and in your PATH.
 - On AMD systems: `rocm-smi` may be required for temperature readings on newer cards.
 
-### Installation & Running
+
+### Easy Installation & Running
+1.  Install Yoinky using Cargo:
+
+    ```bash
+    cargo install yoinky
+    ```
+2.  Run the application:
+
+    ```bash
+    yoinky
+    ```
+    
+
+### Installation & Running from Source
 
 1.  Clone the repository:
 
