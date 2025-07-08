@@ -1,11 +1,16 @@
-# Yoinky
+# Yoinky :: System Monitor
 
-A lightweight and efficient terminal-based tool for monitoring CPU usage, built with Rust. Yoinky provides a real-time view of your system's CPU activity, leveraging `ratatui` for a clean and responsive terminal user interface and `procfs` to gather system information directly from the `/proc` filesystem.
+![Yoinky Screenshot](https://i.imgur.com/YOUR_SCREENSHOT_ID.png) <!-- Replace with a real screenshot URL -->
+
+A lightweight and efficient terminal-based system monitor for Linux, built with Rust. Yoinky provides a real-time, at-a-glance view of your system's key metrics in a clean and boxy terminal user interface.
 
 ## Features
 
-- **Real-time CPU Monitoring**: Displays the number of CPU cores.
-- **Terminal-Based UI**: A clean, minimal interface built with `ratatui`.
+- **CPU Monitoring**: Tracks core count, temperature, and overall usage percentage.
+- **RAM Monitoring**: Displays current memory usage with a progress gauge.
+- **GPU Monitoring**: Detects GPU type (Nvidia/AMD) and shows its temperature.
+- **Disk Monitoring**: Shows total disk usage for your root partition.
+- **Modern TUI**: A clean, segmented interface built with `ratatui`.
 - **Lightweight**: Written in Rust for performance and low resource consumption.
 
 ## Technology Stack
@@ -20,13 +25,15 @@ A lightweight and efficient terminal-based tool for monitoring CPU usage, built 
 ### Prerequisites
 
 - [Rust](https://www.rust-lang.org/tools/install) (and Cargo) installed on your system.
+- On NVIDIA systems: `nvidia-smi` command-line tool must be installed and in your PATH.
+- On AMD systems: `rocm-smi` may be required for temperature readings on newer cards.
 
 ### Installation & Running
 
 1.  Clone the repository:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/your-username/yoinky.git # Replace with your repo URL
     cd yoinky
     ```
 
@@ -40,4 +47,4 @@ A lightweight and efficient terminal-based tool for monitoring CPU usage, built 
 
 ---
 
-_This is a project in early development. More features like detailed core usage, process lists, and memory information are planned for the future!_
+_This project is under active development. Future plans include process lists, network monitoring, and more detailed hardware information!_
