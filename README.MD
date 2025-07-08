@@ -63,6 +63,6 @@ A lightweight and efficient terminal-based system monitor for Linux, built with 
 
 ## 🖼️ Screenshots
 
-![yoinky](yoinkySS.png)
+![Yoinky](yoinkySS.png)
 
 _This project is under active development. Future plans include process lists, network monitoring, and more detailed hardware information!_

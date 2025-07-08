@@ -75,7 +75,7 @@ pub fn draw_ui(f: &mut Frame, area: Rect) {
         .title(" 💻 CPU ")
         .borders(Borders::ALL)
         .border_type(BorderType::Rounded)
-        .border_style(Style::default().fg(Color::LightBlue));
+        .border_style(Style::default().fg(Color::Rgb(32,81,255)));
 
     let cpu_text = vec![
         Line::from(vec![
@@ -98,7 +98,7 @@ pub fn draw_ui(f: &mut Frame, area: Rect) {
 
     let cpu_gauge = Gauge::default()
         .label(label)
-        .gauge_style(Style::default().fg(Color::Cyan))
+        .gauge_style(Style::default().fg(Color::Rgb(0,254,252)))
         .percent(cpu_usage.map_or(0, |u| u as u16));
 
     f.render_widget(cpu_block, top_content_areas[0]);
@@ -138,7 +138,7 @@ pub fn draw_ui(f: &mut Frame, area: Rect) {
         .title(" 🎮 GPU ")
         .borders(Borders::ALL)
         .border_type(BorderType::Rounded)
-        .border_style(Style::default().fg(Color::LightGreen));
+        .border_style(Style::default().fg(Color::Rgb(15, 255, 80)));
 
     let mut gpu_text = vec![];
     if let Some((gpu_type, temp)) = gpu_info {
@@ -164,7 +164,7 @@ pub fn draw_ui(f: &mut Frame, area: Rect) {
         .title(" 💾 DISK ")
         .borders(Borders::ALL)
         .border_type(BorderType::Rounded)
-        .border_style(Style::default().fg(Color::Red));
+        .border_style(Style::default().fg(Color::Rgb(255,49,49)));
 
     let (disk_percent, disk_text) = if let Some((used, total)) = disk_usage {
         (
@@ -176,7 +176,7 @@ pub fn draw_ui(f: &mut Frame, area: Rect) {
     };
     let disk_gauge = Gauge::default()
         .label(disk_text)
-        .gauge_style(Style::default().fg(Color::Red))
+        .gauge_style(Style::default().fg(Color::Rgb(255,49,49)))
         .percent(disk_percent);
     f.render_widget(disk_block.clone(), bottom_content_areas[1]);
     f.render_widget(disk_gauge.block(disk_block), bottom_content_areas[1]);
